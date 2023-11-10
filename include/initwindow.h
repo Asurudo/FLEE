@@ -29,7 +29,7 @@ GLFWwindow* Window::returnwindow()
 	return window;
 }
 
-//³õÊ¼»¯glfw
+//ï¿½ï¿½Ê¼ï¿½ï¿½glfw
 void Window::initGlfw()
 {
 	glfwInit();
@@ -38,7 +38,7 @@ void Window::initGlfw()
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 }
 
-//³õÊ¼»¯glad
+//ï¿½ï¿½Ê¼ï¿½ï¿½glad
 void Window::initGlad()
 {
 	if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
@@ -47,27 +47,27 @@ void Window::initGlad()
 	}
 }
 
-//³õÊ¼»¯ÊÓ¿Ú
+//ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½Ó¿ï¿½
 void Window::initViewPoint()
 {
-	//ÊÓ¿Ú´óÐ¡£¬×óÏÂ½ÇÎ»ÖÃÓë¿í¸ß
+	//ï¿½Ó¿Ú´ï¿½Ð¡ï¿½ï¿½ï¿½ï¿½ï¿½Â½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	glViewport(0, 0, 1600, 1200);
 }
 
-//´´½¨´°¿Ú
+//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 void Window::createWindow()
 {
-	window = glfwCreateWindow(1600, 1200, "The world is based on Hatsune Miku", NULL, NULL);
+	window = glfwCreateWindow(1600, 1200, "FLEE", NULL, NULL);
 	if (window == NULL)
 	{
 		std::cout << "Failed to create GLFW window" << std::endl;
 		glfwTerminate();
 	}
-	//Í¨ÖªGLFW½«´°¿ÚµÄÉÏÏÂÎÄÉèÖÃÎªµ±Ç°Ïß³ÌµÄÖ÷ÉÏÏÂÎÄ
+	//Í¨ÖªGLFWï¿½ï¿½ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Ç°ï¿½ß³Ìµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	glfwMakeContextCurrent(window);
 }
 
-//µ±ÓÃ»§¸Ä±ä´°¿ÚµÄ´óÐ¡µÄÊ±ºò£¬ÊÓ¿ÚÒ²±»µ÷Õû
+//ï¿½ï¿½ï¿½Ã»ï¿½ï¿½Ä±ä´°ï¿½ÚµÄ´ï¿½Ð¡ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Ó¿ï¿½Ò²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 void Window::framebuffer_size_callback()
 {
 	glViewport(0, 0, WINDOW_WIDTH, WINDOW_HEIGHT);
