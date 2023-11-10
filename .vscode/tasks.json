@@ -1,0 +1,48 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "cppbuild",
+			"label": "g++.exe build active file",
+			"command": "C:\\mingw64\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"-O",
+				"${file}",
+				"${fileDirname}/libglfw3.a",
+				"${fileDirname}/glad.c",
+				"${fileDirname}/lib/libassimp.dll.a",
+				"${fileDirname}/lib/libzlibstatic.a",
+				// "${fileDirname}/include/assimp-vc140-mt.dll",
+				"-lopengl32",
+				"-lgdi32",
+				"-L","${fileDirname}",
+				"-l","libassimp-5",
+				// "-L",
+				// "${workspaceFolder}/lib",
+				// "-lglfw3",
+				// "-I",
+				// "include",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe",
+				"--include-directory=${fileDirname}/include", //确保头文件的包含
+				// "-L",
+				// "${workspaceFolder}\\lib",
+				// "-lglfw3",
+				// "-lopengl32",
+				// "-lgdi32"
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "编译器: C:\\mingw64\\bin\\g++.exe"
+		}
+	]
+}

@@ -1,0 +1,16 @@
+# Blender MTL File: 'Renault12TL.blend'
+# Material Count: 1
+
+newmtl renault_12tl
+Ns 225.000000
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 0.200000
+illum 9
+map_Bump Textures\\Renault12TL_Normal.png
+map_Kd Textures\\Renault12TL_BaseColor.png
+map_Ns Textures\\Renault12TL_Roughness.png
+refl Textures\\Renault12TL_Metallic.png
