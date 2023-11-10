@@ -24,7 +24,7 @@ IDE：Visual Studio Code
 
 ## 配置
 
-下载VSC后，配置好GCC环境即可运行。
+下载VSC后，配置好GCC环境即可运行，其余详情请参考配置文件中的tasks.json。
 
 如果需要重新编译ASSIMP库，请参考：
 
